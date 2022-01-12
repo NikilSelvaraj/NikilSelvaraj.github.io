@@ -1,0 +1,218 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    height: calc(100vh);
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-link, .navbar-brand {
+    font-size: 20px !important;
+    font-weight: 300 !important;
+    padding: 20px 40px !important;
+    text-align: left;
+    margin-right: 0 !important;
+}
+
+.nav-icon {
+    height: 27px;
+    width: 27px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-fluid {
+    margin-top: 75px;
+}
+
+.collapsed-nav .nav-link {
+    display: none !important;
+}
+
+.collapsed-nav .nav-icon {
+    margin: 20px 20px !important;
+}
+
+.header {
+    margin: 45px 15px 0px 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #353333;
+}
+
+.header h3 {
+    font-weight: 400;
+    font-size: 38px;
+}
+
+
+
+.card-view {
+    padding-top: 30px;
+    padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: inherit;
+    padding-right: 15px;
+    flex-direction: row;
+    overflow-y: scroll;
+    
+}
+
+.card {
+    margin-right: 40px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+    box-shadow: 1px 1px 1rem 1px rgb(0 0 0 / 39%)
+}
+
+
+.card-header,.list-header{
+    height: 100%;
+    width: 100%;
+    min-height: 160px;
+    background-image: linear-gradient(to right,rgb(121, 119, 119),rgb(139, 194, 238), rgb(1, 54, 85));
+    position: relative;
+}
+
+.card-container::before, .list-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    background: inherit;
+}
+
+.card-container,.list-container {
+    background: inherit;
+}
+
+.card-title,.list-title {
+    z-index: 1000;
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    position: relative;
+    top:45px;
+    text-shadow: 2px 2px 5px #4d4c4c;
+    bottom: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+.card-body {
+    min-height: 170px;
+}
+
+.menu-container {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    position: relative;
+    z-index: 1000;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(87 84 84 / 29%);
+    cursor: pointer;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.list-element {
+    min-height: 90px;
+    margin: 25px 25px 25px 0px;
+    border-radius: 4px;
+    border: 1px solid  rgb(92, 92, 92);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.list-view ul li{
+    list-style: none;
+}
+
+.list-header {
+    width: 300px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300px;
+    padding: 10px;
+    border-right: 1px solid rgb(92, 92, 92);
+}
+
+.list-body {
+    padding: 10px 10px 10px 20px;
+    font-size: 17px;
+    color: rgb(66, 66, 66);
+    width: 100%;
+}
+
+.form-input .form-check-input{
+    height: 20px;
+    width: 20px;
+    margin-right: 17px;
+}
+
+.form-input a{
+    font-size: 20px;
+    color: rgb(22, 72, 129) !important;
+}
+
+.list-title {
+    text-align: center;
+}
+
+.list-header {
+    min-height: 120px !important;
+}
+
+.list-title {
+    top: 30px !important;
+    font-size: 20px !important;
+}
+
+.color-option {
+    height: 20px;
+    width: 20px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.v-hidden {
+    visibility: hidden;
+    position: absolute;
+    z-index: 200;
+}
+
+.colorpicker-options {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.popover-body{
+    max-width: 170px;
+    min-height: 170px;
+}
+
+.popover-header {
+    background-color: rgb(61, 61, 61) !important;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(228, 228, 228);
+}
+
